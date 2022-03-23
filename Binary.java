@@ -1,3 +1,5 @@
+package computer_programming2;
+
 /******************************************************************
  * Program 1: Conversion from binary to decimal representation
  * Programmer: Write your name here
@@ -15,58 +17,46 @@
  *
  ******************************************************************/
 
-// Imported packages
-   import javax.swing.*;
+import javax.swing*;
 
-    public class Binary
-   {
-   
-   // Main method
-       public static void main(String[] args)
-      {
-      	
-      	// Request 6-bit binary number
-         String binaryString=JOptionPane.showInputDialog("Enter a 6-bit binary number");
-      	
-      	// Convert from String to integer type
-         int binary=Integer.parseInt(binaryString);
-      	
-      	// Declaration of output value
-         int decimal=0;
-      
-      	// Declaration of variable to hold the current bit
-         int bit;
-      
-      	
-       	//////////////////////////////////////
-      	// ADD YOUR CODE HERE
-      	// FOLLOW THE EXAMPLE PROVIDED
-      	// FOR THE LAST BIT, THE 6th
-      	//////////////////////////////////////
-/*      				
-         bit=binary%10;//get the last bit (6th)
-         decimal=decimal+bit*1;//add it, multiplied by the corresponding power of 2
-         binary=binary/10;//get rid of the 6th bit, now the 5th bit is last
-      	
-         bit=binary%10;//get the last bit (5th)
-         decimal=decimal+bit*2;//add it, multiplied by the corresponding power of 2
-         binary=binary/10;//get rid of the 5th bit, now the 4th bit is last
-      	
-         bit=binary%10;//get the last bit (4th)
-         decimal=decimal+bit*4;//add it, multiplied by the corresponding power of 2
-         binary=binary/10;//get rid of the 4th bit, now the 3rd bit is last
-      	
-         bit=binary%10;//get the last bit (3rd)
-         decimal=decimal+bit*8;//add it, multiplied by the corresponding power of 2
-         binary=binary/10;//get rid of the 3rd bit, now the 2nd bit is last
-      	
-         bit=binary%10;//get the last bit (2nd)
-         decimal=decimal+bit*16;//add it, multiplied by the corresponding power of 2
-         binary=binary/10;//get rid of the 2nd bit, now the 1st bit is last 
-      	
-         bit=binary%10;//get the last bit (1st)
-         decimal=decimal+bit*32;//add it, multiplied by the corresponding power of 2
-*/
+	public class Binary {
+
+	public static void main(String[] args) {
+		
+		// Request 6-bit binary number
+        String binaryString=JOptionPane.showInputDialog("Enter a 6-bit binary number");
+     	
+     	// Convert from String to integer type
+        int binary=Integer.parseInt(binaryString);
+     	
+     	// Declaration of output value
+        int decimal=0;
+     
+     	// Declaration of variable to hold the current bit
+        int bit;
+           				
+        bit=binary%10;	//get the last bit (6th)
+        decimal=decimal+bit*1;	//add it, multiplied by the corresponding power of 2
+        binary=binary/10;	//get rid of the 6th bit, now the 5th bit is last
+     	
+        bit=binary%10;	//get the last bit (5th)
+        decimal=decimal+bit*2;	//add it, multiplied by the corresponding power of 2
+        binary=binary/10;	//get rid of the 5th bit, now the 4th bit is last
+     	
+        bit=binary%10;	//get the last bit (4th)
+        decimal=decimal+bit*4;	//add it, multiplied by the corresponding power of 2
+        binary=binary/10;	//get rid of the 4th bit, now the 3rd bit is last
+     	
+        bit=binary%10;	//get the last bit (3rd)
+        decimal=decimal+bit*8;	//add it, multiplied by the corresponding power of 2
+        binary=binary/10;	//get rid of the 3rd bit, now the 2nd bit is last
+     	
+        bit=binary%10;	//get the last bit (2nd)
+        decimal=decimal+bit*16;	//add it, multiplied by the corresponding power of 2
+        binary=binary/10;	//get rid of the 2nd bit, now the 1st bit is last 
+     	
+        bit=binary%10;	//get the last bit (1st)
+        decimal=decimal+bit*32;	//add it, multiplied by the corresponding power of 2
 
 	int i=0;
 	int power2=1;
@@ -79,16 +69,17 @@
 		i++;
 	}
 
-      	// Format output String
-         String binaryOutput="Binary: " + binaryString;
-         String decimalOutput="Decimal: " + decimal;
-      	
-      	// Output message
-         JOptionPane.showMessageDialog(null, binaryOutput + "\n" + decimalOutput,
-            "Binary to Decimal Conversion", JOptionPane.INFORMATION_MESSAGE);
-      		
-      	// Exit
-         System.exit(0);
-      		
-      }
-   }
+     	// Format output String
+        String binaryOutput="Binary: " + binaryString;
+        String decimalOutput="Decimal: " + decimal;
+     	
+     	// Output message
+        JOptionPnane.showMessageDialog(null, binaryOutput + "\n" + decimalOutput,
+           "Binary to Decimal Conversion", JOptionPane.INFORMATION_MESSAGE);
+     		
+     	// Exit
+        System.exit(0);
+     		
+     }
+	
+	}
